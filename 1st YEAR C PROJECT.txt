@@ -1,0 +1,2862 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+int ch,id,dob,hsmark,ssmark,aa,fph,mph,k,swph,sph,m,p,S,h,a,b,z,c,aadhar,pincode,regnum,year,marks,sslcmark,income,A,e,dp,ac,sh,qt;
+char name[50];
+char com[50];
+char fname[50];
+char mname[50];
+char gname[50];
+char fop[50];
+char mop[50];
+char addre[50];
+char state[50];
+char taluk[50];
+char district[50];
+char tongue[50];
+char community[50];
+char nativity[50];
+char address[50];
+char civilestatus[50];
+char nationality[50];
+char religion[50];
+char catagory[50];
+char schoollocation[50];
+char tamilnadu[50];
+char governmentschool[50];
+char group[50];
+char states[50];
+char medium[50];
+char occuption[50];
+char graduate[50];
+char gender[50];
+float sp,hp,cut,age,result;
+    printf("\n\t\t\t\t             HIGHER EDUCATIONAL FORM              ");
+    printf("\n\t [1] MANAGEMENT ADMISSION FORM");
+    printf("\n\t [2] COUNSELING FORM");
+    printf("\n\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ch);
+switch(ch)
+{
+case 1:
+{
+struct student
+{
+                char name[50];
+                int id;
+                float age;
+                int dob;
+                char addre[50];
+                char fname[50];
+                char mname[50];
+                char gname[50];
+                char fop[50];
+                char mop[50];
+                int fph;
+                int mph;
+                int sph;
+                int swph;
+                int ssmark;
+                int hsmark;
+                float sp;
+                float hp;
+                int m;
+                int p;
+                int h;
+                float result;
+                int dp;
+                int z;
+};
+struct student stud1;
+    printf("\n\n                       MANAGEMENT ADMISSION FORM");
+    printf("\n\n\t\t\t\t\t-----------------------------ENTER STUDENT DETAILS--------------------------------------");
+    printf("\n\n\t\t\tENTER STUDENT'S NAME:");
+    scanf("%s",&stud1.name);
+    printf("\n\n\t\t\t ENTER ADMISSION NUMBER:");
+    scanf("%d",&stud1.id);
+    printf("\n\n\t\t\t DATE OF BIRTH: ");
+    scanf("%d",&stud1.dob);
+    printf("\n\n\t\t\t AGE:");
+    scanf("%f",&stud1.age);
+    printf("\n\n\t\t\t ADDRESS:");
+    scanf("%s",&stud1.addre);
+    printf("\n\n\t\t\t FATHER'S NAME: ");
+    scanf("%s",&stud1.fname);
+    printf("\n\n\t\t\t MOTHER'S NAME: ");
+    scanf("%s",&stud1.mname);
+    printf("\n\n\t\t\t write the guardian's name if available otherwise fill father's name");
+    printf("\n\n\t\t\t GUARDIAN'S NAME:");
+    scanf("%s",&stud1.gname);
+    printf("\n\n\t\t\t FATHER'SOCCUPATION:");
+    scanf("%s",&stud1.fop);
+    printf("\n\n\t\t\t MOTHER'SOCCUPATION:");
+    scanf("%s",&stud1.mop);
+    printf("\n\n\t\t\t FATHER'S PHONE NUMBER:");
+    scanf("%d",&stud1.fph);
+    printf("\n\n\t\t\t MOTHER'S PHONE NUMBER:");
+    scanf("%d",&stud1.mph);
+    printf("\n\n\t\t\t STUDENT'S PHONE NUMBER:");
+    scanf("%d",&stud1.sph);
+    printf("\n\n\t\t\t STUDENT'S WHATSAPP NUMBER:");
+    scanf("%d",&stud1.swph);
+    printf("\n\n\t\t\t ------------------ENTER MARK DETAILS--------------------------");
+    printf("\n\n\t\t\t ENTER SSLC SCHOOL MARK\t:");
+    scanf("%d",&stud1.ssmark);
+    printf("\n\n\t\t\t ENTER HSC SCHOOL MARK\t:");
+    scanf("%d",&stud1.hsmark);
+    printf("\n\n\t\t\t ENTER SSLC PERCENTAGE\t:");
+    scanf("%f",&stud1.sp);
+    printf("\n\n\t\t\t ENTER HSC PERCENTAGE\t:");
+    scanf("%f",&stud1.hp);
+    printf("\n\n\t\t\t TO FIND CUTOFF");
+    printf("\n\n\t\t\tEnter your maths mark\n");
+    scanf("%d",&stud1.m);
+    printf("\n\n\t\t\tEnter your physics mark\n");
+    scanf("%d",&stud1.p);
+    printf("\n\n\t\t\tEnter your chemistry mark\n");
+    scanf("%d",&stud1.h);
+    a=m/2.0;
+    b=p/4.0;
+    c=h/4.0;
+    stud1.result=(a+b+c)*2;
+    printf("\n\n\t\t\tEngineering cutoff=%f",stud1.result);
+    printf("\n\n\t\t\t\t\t\t CHOOSE THE DEPARTMENT");
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&stud1.dp);
+switch(stud1.dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\n\t\t YOU HAVE SUCESSFULLY SELECTED YOUR DEPARTMENT");
+    printf("\n\n\n\n\n\n\t [1] PRESS 1 TO KNOW YOUR DETAILS ");
+    printf("\n\t ENTER YOUR CHOICE");
+    scanf("%d",&stud1.z);
+switch(stud1.z)
+{
+case 1:
+    printf("------------------STUDENT DETAILS----------------");
+    printf("\n\n\t\t\tSTUDENT NAME\t:%s",stud1.name);
+    printf("\n\n\t\t\t ENTER ADMISSION NUMBER\t:%d",stud1.id);
+    printf("\n\n\t\t\t  ADDRESS \t: %s",stud1.addre);
+    printf("\n\n\t\t\t DATE OF BIRTH\t:%d ",stud1.dob);
+    printf("\n\n\t\t\t AGE \t:%d ",stud1.age);
+    printf("\n\n\t\t\t FATHER'S NAME\t:%s",stud1.fname);
+    printf("\n\n\t\t\t MATHER'S NAME\t:%s",stud1.mname);
+    printf("\n\n\t\t\t NAME OF THE PARENTS/GUARDIAN\t:%s ",stud1.gname);
+    printf("\n\n\t\t\t FATHER'SOCCUPATION:",stud1.fop);
+    printf("\n\n\t\t\t MOTHER'SOCCUPATION:",stud1.mop);
+    printf("\n\n\t\t\t FATHER'S PHONE NUMBER\t:%d",stud1.fph);
+    printf("\n\n\t\t\t MOTHER'S PHONE NUMBER\t:%d",stud1.mph);
+    printf("\n\n\t\t\t STUDENT PHONE NUMBER\t:%d",stud1.sph);
+    printf("\n\n\t\t\t STUDENT WHATSAPP PHONE NUMBER\t:%d",stud1.swph);
+    printf("\n\n\t\t\t ------------------ MARK DETAILS--------------------------");
+    printf("\n\n\t\t\t ENTER SSLC SCHOOL MARK\t:%d",stud1.ssmark);
+    printf("\n\n\t\t\t ENTER HSC SCHOOL MARK\t:%d",stud1.hsmark);
+    printf("\n\n\t\t\t ENTER SSLC PERCENTAGE\t:%f",stud1.sp);
+    printf("\n\n\t\t\t ENTER HSC PERCENTAGE\t:%f",stud1.hp);
+    printf("\n\n\t\t\t Engineering cutoff=%f",stud1.result);
+    printf("\n\n\t\t\t YOUR ADMISSION HAS BEEN SUBMITTED SUCESSFULLY");
+}
+}
+}
+break;
+case 2:
+    printf("\n\n\t\t\t\t\t\t\t\tCOUNSELING FORM");
+    printf("\n\n\t------------------ENTER STUDENT DETAILS----------------");
+    printf("\n\n\t ENTER STUDENT'S NAME\t:");
+    scanf("%s",&name);
+    printf("\n\n\t COMMUNICATION ADRESS: \t:");
+    scanf("%s",&addre);
+    printf("\n\n\t STATE: ");
+    scanf("%s",&state);
+    printf("\n\n\t TALUK :");
+    scanf("%s",&taluk);
+    printf("\n\n\t NATIVE DISTRIC :");
+    scanf("%s",&district);
+    printf("\n\n\t DATE OF BIRTH: ");
+    scanf("%d",&dob);
+    printf("\n\n\t MOTHER TONGUE :");
+    scanf("%s",&tongue);
+    printf("\n\n\t NATIVITY :");
+    scanf("%s",&nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY:");
+    scanf("%s",&community);
+    printf("\n\n\t AADHAR NUMBER \n(OPTIONAL (eg: 1234 5677 8901)\n(eg:--)):");
+    scanf("%d",&aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t: ");
+    scanf("%s",&gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:");
+    scanf("%s",&fph);
+    printf("\n\n\t PARMANENT ADDRESS :");
+    scanf("%s",&address);
+    printf("\n\n\t DISTRICT:");
+    scanf("%s",&district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE:");
+    scanf("%d",&pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE:");
+    scanf("%s",&civilestatus);
+    printf("\n\n\t GENDER:");
+    scanf("%s",&gender);
+    printf("\n\n\t NATIONALITY:");
+    scanf("%s",&nationality);
+    printf("\n\n\t RELIGION:");
+    scanf("%s",&religion);
+    printf("\n\n\t\t\t\t\t\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL:");
+    scanf("%s",&catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2):");
+    scanf("%s",&schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU:");
+    scanf("%s",&tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?:");
+    scanf("%s",&governmentschool);
+    printf("\n\n\t\t\t\t\t\t\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER:");
+    scanf("%d",&regnum);
+    printf("\n\n\t QUALIFIED YEAR:");
+    scanf("%d",&year);
+    printf("\n\n\t HSC GROUP : ");
+    scanf("%s",&group);
+    printf("\n\n\t NAME OF THE BOARD OF EXAMINATION : ");
+    printf("\n\n\t TAMIL NADU BOARD OF HIGHER SECONDARY EDUCATION /n\t\t\t\t OR \n\t OTHER STATES:");
+    scanf("%s",&states);
+    printf("\n\n\t MEDIUM OF INSTRUCTION ");
+    printf("\n\n\t ( ENGLISH OR TAMIL ):");
+    scanf("%s",&medium);
+    printf("\n\n\t HSC OBTAINED TOTAL MARKS:");
+    scanf("%f",&marks);
+    printf("\n\n\t SSLC MAXIMUM(TOTAL) MARKS:");
+    scanf("%f",&sslcmark);
+    printf("\n\n\t CUT OF CALCULATION");
+    printf("\n\n\t Enter your maths mark\n");
+    scanf("%d",&m);
+    printf("\n\n\t Enter your physics mark\n");
+    scanf("%d",&p);
+    printf("\n\n\t Enter your chemistyr mark\n");
+    scanf("%d",&h);
+    a=m/2.0;
+    b=p/4.0;
+    c=h/4.0;
+    result=(a+b+c)*2;
+    printf("\n\n\t Engineering cutoff=%f",result);
+    printf("\n\n\t          SCHOLARSHIP INFORMATION                 ");
+    printf("\n\n\t PARENT OCCUPATION:");
+    scanf("%s",&occuption);
+    printf("\n\n\t ANNUAL INCOME:");
+    scanf("%d",&income);
+    printf("\n\t ARE YOU A FIRST GRADUATE?:");
+    scanf("%s",&graduate);
+    printf("\n\n\t[1] SPECIAL RESERVATION CATEGORIES ");
+    printf("\n\n\t[2] GENERAL COUNSELING ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&c);
+switch(c)
+{
+case 1:
+    printf("\n            SPECIAL RESERVATION CATEGORIES                     ");
+    printf("\n\n\t[1] DIFFERENTIAL ABLED");
+    printf("\n\n\t[2] EX-SERVICEMEN");
+    printf("\n\n\t[3] SPORTS");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&A);
+switch(A)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\n\t[1] YOU WANT TO CHOOSE DISTRICT WISE COLLEGE:");
+    printf("\n\n\t[2] YOU WANT TO SHOW ALL THE COLLEGE:");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&b);
+switch(b)
+{
+case 1:
+    printf("\n\n\t[1] CHENNAI");
+    printf("\n\n\t[2] COIMBATORE");
+    printf("\n\n\t[3] ERODE");
+    printf("\n\n\t[4] SALEM");
+    printf("\n\n\t[5] VELLORE");
+    printf("\n\n\t[6] NAMAKKAL");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&m);
+switch(m)
+{
+case 1:
+    printf("\n\n\t [] ");
+    printf("\n\n\t [1] Loyola-ICAM College of Engineering and Technology");
+    printf("\n\n\t [2] BSA Crescent Engineering College");
+    printf("\n\n\t [3] R.M.K. Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN SPECIAL RESERVATION CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n\t THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 2:
+    printf("\n\t [] ");
+    printf("\n\t [1] PSG College of Technology");
+    printf("\n\t [2] Coimbatore Institute of Technology");
+    printf("\n\t [3] Sri Ramakrishna Engineering College");
+    printf("\n\n ENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\n ENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN SPECIAL RESERVATION CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 3:
+    printf("\n\t [] ");
+    printf("\n\t [1] Kongu Engineering College");
+    printf("\n\t [2] Velalar College of Engineering and Technology");
+    printf("\n\t [3] Erode Sengunthar Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN SPECIAL RESERVATION CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 4:
+    printf("\n\t [] ");
+    printf("\n\t [1] AVS Engineering College");
+    printf("\n\t [2] Government College of Engineering, Salem");
+    printf("\n\t [3] Sona College of Technology");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN SPECIAL RESERVATION CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 5:
+    printf("\n\t [] ");
+    printf("\n\t [1] Thanthai Periyar Government Institute Of Technology");
+    printf("\n\t [2] C. Abdul Hakeem College of Engineering & Technology");
+    printf("\n\t [3] Sree Kirshna Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN SPECIAL RESERVATION CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 6:
+    printf("\n\t [] ");
+    printf("\n\t [1] Selvam College of Technology");
+    printf("\n\t [2] J.K.K.Nattraja College of Engineering and Technology");
+    printf("\n\t [3] Sengunthar Engineering College (Autonomous)");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN SPECIAL RESERVATION CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+}
+switch(b)
+{
+case 2:
+    printf("\n\t [1] Loyola-ICAM College of Engineering and Technology");
+    printf("\n\t [2] BSA Crescent Engineering College");
+    printf("\n\t [3] R.M.K. Engineering College");
+    printf("\n\t [4] PSG College of Technology");
+    printf("\n\t [5] Coimbatore Institute of Technology");
+    printf("\n\t [6] Sri Ramakrishna Engineering College");
+    printf("\n\t [7] Kongu Engineering College");
+    printf("\n\t [8] Velalar College of Engineering and Technology");
+    printf("\n\t [9] Erode Sengunthar Engineering College");
+    printf("\n\t [10] AVS Engineering College");
+    printf("\n\t [11] Government College of Engineering, Salem");
+    printf("\n\t [12] Sona College of Technology");
+    printf("\n\t [13] Thanthai Periyar Government Institute Of Technology");
+    printf("\n\t [14] C. Abdul Hakeem College of Engineering & Technology");
+    printf("\n\t [15] Sree Kirshna Engineering College");
+    printf("\n\t [16] Selvam College of Technology");
+    printf("\n\t [17] J.K.K.Nattraja College of Engineering and Technology");
+    printf("\n\t [18] Sengunthar Engineering College (Autonomous)");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+case 9:
+case 10:
+case 11:
+case 12:
+case 13:
+case 14:
+case 15:
+case 16:
+case 17:
+case 18:
+
+    printf("\n\t           AVAILABLE COURSES");
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN SPECIAL RESERVATION CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+}
+}
+}
+    printf("\n\n GENERAL COUNSELING ");
+switch(c)
+{
+case 2:
+    printf("\n\n\t[1] ACADEMIC ");
+    printf("\n\n\t[2] GOVE.SCHOOL 7.5% CATEGORY ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&aa);
+switch(aa)
+{
+case 1:
+    printf("\n\t\t ENTER YOUR CUTOFF :");
+    scanf("%f",&cut);
+    printf("\n\t\t ENTER YOUR COMMUNITY :");
+    scanf("%s",&com);
+if(cut>=180)
+{
+    printf("\n\t\t YOU ARE IN FIRST ROUND");
+}
+else if(cut>=160)
+{
+    printf("\n\t\t YOU ARE IN SECOND ROUND");
+}
+else
+{
+    printf("\n\t\t YOU ARE IN THIRD ROUND");
+}
+    printf("\n\n\t\t [1] PRESS 1 TO CONTINUE:");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&S);
+switch(S)
+{
+case 1:
+    printf("\n\n\t[1] YOU WANT TO CHOOSE DISTRICT WISE COLLEGE:");
+    printf("\n\n\t[2] YOU WANT TO SHOW ALL THE COLLEGE:");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&b);
+switch(b)
+{
+case 1:
+    printf("\n\n\t[1] CHENNAI");
+    printf("\n\n\t[2] COIMBATORE");
+    printf("\n\n\t[3] ERODE");
+    printf("\n\n\t[4] SALEM");
+    printf("\n\n\t[5] VELLORE");
+    printf("\n\n\t[6] NAMAKKAL");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&m);
+switch(m)
+{
+case 1:
+    printf("\n\n\t [] ");
+    printf("\n\n\t [1] Loyola-ICAM College of Engineering and Technology");
+    printf("\n\n\t [2] BSA Crescent Engineering College");
+    printf("\n\n\t [3] R.M.K. Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 2:
+    printf("\n\t [] ");
+    printf("\n\t [1] PSG College of Technology");
+    printf("\n\t [2] Coimbatore Institute of Technology");
+    printf("\n\t [3] Sri Ramakrishna Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 3:
+    printf("\n\t [] ");
+    printf("\n\t [1] Kongu Engineering College");
+    printf("\n\t [2] Velalar College of Engineering and Technology");
+    printf("\n\t [3] Erode Sengunthar Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 4:
+    printf("\n\t [] ");
+    printf("\n\t [1] AVS Engineering College");
+    printf("\n\t [2] Government College of Engineering, Salem");
+    printf("\n\t [3] Sona College of Technology");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 5:
+    printf("\n\t [] ");
+    printf("\n\t [1] Thanthai Periyar Government Institute Of Technology");
+    printf("\n\t [2] C. Abdul Hakeem College of Engineering & Technology");
+    printf("\n\t [3] Sree Kirshna Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 6:
+    printf("\n\t [] ");
+    printf("\n\t [1] Selvam College of Technology");
+    printf("\n\t [2] J.K.K.Nattraja College of Engineering and Technology");
+    printf("\n\t [3] Sengunthar Engineering College (Autonomous)");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+}
+switch(b)
+{
+case 2:
+    printf("\n\t [1] Loyola-ICAM College of Engineering and Technology");
+    printf("\n\t [2] BSA Crescent Engineering College");
+    printf("\n\t [3] R.M.K. Engineering College");
+    printf("\n\t [4] PSG College of Technology");
+    printf("\n\t [5] Coimbatore Institute of Technology");
+    printf("\n\t [6] Sri Ramakrishna Engineering College");
+    printf("\n\t [7] Kongu Engineering College");
+    printf("\n\t [8] Velalar College of Engineering and Technology");
+    printf("\n\t [9] Erode Sengunthar Engineering College");
+    printf("\n\t [10] AVS Engineering College");
+    printf("\n\t [11] Government College of Engineering, Salem");
+    printf("\n\t [12] Sona College of Technology");
+    printf("\n\t [13] Thanthai Periyar Government Institute Of Technology");
+    printf("\n\t [14] C. Abdul Hakeem College of Engineering & Technology");
+    printf("\n\t [15] Sree Kirshna Engineering College");
+    printf("\n\t [16] Selvam College of Technology");
+    printf("\n\t [17] J.K.K.Nattraja College of Engineering and Technology");
+    printf("\n\t [18] Sengunthar Engineering College (Autonomous)");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+case 9:
+case 10:
+case 11:
+case 12:
+case 13:
+case 14:
+case 15:
+case 16:
+case 17:
+case 18:
+
+    printf("\n\t           AVAILABLE COURSES");
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=190\n\t\tMBC>=185\n\t\tOC>=180\n\t\tSC>=175 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=185\n\t\tMBC>=180\n\t\tOC>=175\n\t\tSC>=170 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=170\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=170\n\t\tOC>=160\n\t\tSC>=155 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=165\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+ printf("\n\t I WILL NOT ACCEPT ");
+ printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+ printf("\n\t [2] AM QUIT THIS COUNSELING ");
+ printf("\n\t ENTER YOUR CHOICE:");
+scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+}
+switch(aa)
+{
+case 2:
+printf("\n\n\t    GOVE.SCHOOL 7.5 PERCENTAGE CATEGORY     ");
+printf("\n\n\t[1] YOU WANT TO CHOOSE DISTRICT WISE COLLEGE:");
+printf("\n\n\t[2] YOU WANT TO SHOW ALL THE COLLEGE:");
+printf("\n\nENTER YOUR CHOICE:");
+scanf("%d",&b);
+switch(b)
+{
+case 1:
+printf("\n\n\t[1] CHENNAI");
+printf("\n\n\t[2] COIMBATORE");
+printf("\n\n\t[3] ERODE");
+printf("\n\n\t[4] SALEM");
+printf("\n\n\t[5] VELLORE");
+printf("\n\n\t[6] NAMAKKAL");
+printf("\n\nENTER YOUR CHOICE:");
+scanf("%d",&m);
+switch(m)
+{
+case 1:
+    printf("\n\n\t [] ");
+    printf("\n\n\t [1] Loyola-ICAM College of Engineering and Technology");
+    printf("\n\n\t [2] BSA Crescent Engineering College");
+    printf("\n\n\t [3] R.M.K. Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 2:
+    printf("\n\t [] ");
+    printf("\n\t [1] PSG College of Technology");
+    printf("\n\t [2] Coimbatore Institute of Technology");
+    printf("\n\t [3] Sri Ramakrishna Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 3:
+    printf("\n\t [] ");
+    printf("\n\t [1] Kongu Engineering College");
+    printf("\n\t [2] Velalar College of Engineering and Technology");
+    printf("\n\t [3] Erode Sengunthar Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 4:
+    printf("\n\t [] ");
+    printf("\n\t [1] AVS Engineering College");
+    printf("\n\t [2] Government College of Engineering, Salem");
+    printf("\n\t [3] Sona College of Technology");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\t ENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 5:
+    printf("\n\t [] ");
+    printf("\n\t [1] Thanthai Periyar Government Institute Of Technology");
+    printf("\n\t [2] C. Abdul Hakeem College of Engineering & Technology");
+    printf("\n\t [3] Sree Kirshna Engineering College");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+switch(m)
+{
+case 6:
+    printf("\n\t [] ");
+    printf("\n\t [1] Selvam College of Technology");
+    printf("\n\t [2] J.K.K.Nattraja College of Engineering and Technology");
+    printf("\n\t [3] Sengunthar Engineering College (Autonomous)");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING CATEGORIES  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+    case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+}
+switch(b)
+{
+case 2:
+    printf("\n\t [1] Loyola-ICAM College of Engineering and Technology");
+    printf("\n\t [2] BSA Crescent Engineering College");
+    printf("\n\t [3] R.M.K. Engineering College");
+    printf("\n\t [4] PSG College of Technology");
+    printf("\n\t [5] Coimbatore Institute of Technology");
+    printf("\n\t [6] Sri Ramakrishna Engineering College");
+    printf("\n\t [7] Kongu Engineering College");
+    printf("\n\t [8] Velalar College of Engineering and Technology");
+    printf("\n\t [9] Erode Sengunthar Engineering College");
+    printf("\n\t [10] AVS Engineering College");
+    printf("\n\t [11] Government College of Engineering, Salem");
+    printf("\n\t [12] Sona College of Technology");
+    printf("\n\t [13] Thanthai Periyar Government Institute Of Technology");
+    printf("\n\t [14] C. Abdul Hakeem College of Engineering & Technology");
+    printf("\n\t [15] Sree Kirshna Engineering College");
+    printf("\n\t [16] Selvam College of Technology");
+    printf("\n\t [17] J.K.K.Nattraja College of Engineering and Technology");
+    printf("\n\t [18] Sengunthar Engineering College (Autonomous)");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&e);
+switch(e)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+case 9:
+case 10:
+case 11:
+case 12:
+case 13:
+case 14:
+case 15:
+case 16:
+case 17:
+case 18:
+
+    printf("\n\t           AVAILABLE COURSES");
+    printf("\n\t [1] BE Computer Science and Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=180\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [2] B.Tech Information Technology");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=175\n\t\tMBC>=175\n\t\tOC>=170\n\t\tSC>=165 ");
+    printf("\n\t [3] BE Electronics and Communication Engineering ");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=165 ");
+    printf("\n\t [4] BE Electrical and Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=170\n\t\tMBC>=170\n\t\tOC>=165\n\t\tSC>=160 ");
+    printf("\n\t [5] BE Mechanical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [6] BE Biomedical Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=165\n\t\tMBC>=165\n\t\tOC>=160\n\t\tSC>=160 ");
+    printf("\n\t [7] BE Medical Electronics Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=160\n\t\tMBC>=160\n\t\tOC>=155\n\t\tSC>=150 ");
+    printf("\n\t [8] BE Civil Engineering");
+    printf("\n\t ELIGIBILITY\n\t\tBC>=155\n\t\tMBC>=155\n\t\tOC>=150\n\t\tSC>=145 ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&dp);
+switch(dp)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+    printf("\n\t YOU ARE IN GENERAL COUNSELING  ");
+    printf("\n\t THE FINAL CONFOREMENT FOR SEAT ALLOTATMENT ");
+    printf("\n\t [1] I ACCEPT ");
+    printf("\n\t [2] I WILL NOT ACCEPT ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&ac);
+switch(ac)
+{
+case 1:
+    printf("\n\t YOU HAVE SUCESSFULLY GET THE ENGINEERING COLLEGE ADMISSION ");
+    printf("\n\t [1] PRESS 1 TO SHOW YOUR DETAILS ");
+    printf("\n\nENTER YOUR CHOICE:");
+    scanf("%d",&sh);
+switch(sh)
+{
+case 1:
+    printf("\n\n\t------------------STUDENT DETAILS----------------");
+    printf("\n\n\t STUDENT NAME\t:%s",name);
+    printf("\n\n\t COMMUNICATION ADRESS \t: %s",addre);
+    printf("\n\n\t STATE \t:%s",state);
+    printf("\n\n\t TALUK \t:%s",taluk);
+    printf("\n\n\t NATIVE DISTRIC\t:%s",district);
+    printf("\n\n\t DATE OF BIRTH\t:%d ",dob);
+    printf("\n\n\t MOTHER TONGUE \t:%s",tongue);
+    printf("\n\n\t NATIVITY \t:%s",nativity);
+    printf("\n\n\t NAME OF THE COMMUNITY\t:%s",community);
+    printf("\n\n\t AADHAR NUMBER\t:%d",aadhar);
+    printf("\n\n\t NAME OF THE PARENTS/GUARDIAN\t:%s ",gname);
+    printf("\n\n\t FATHER'S PHONE NUMBER\t:%d",fph);
+    printf("\n\n\t PARMANENT ADDRESS \t:%s",address);
+    printf("\n\n\t DISTRICT\t:%s",district);
+    printf("\n\n\t COMMUNICATION ADDRESS PINCODE\t:%d",pincode);
+    printf("\n\n\t CIVIL STATUS OF NATIVE PLACE\t:%s",civilestatus);
+    printf("\n\n\t GENDER\t:%s",gender);
+    printf("\n\n\t NATIONALITY\t:%s",nationality);
+    printf("\n\n\t RELIGION\t:%s",religion);
+    printf("\n\n\t--------------SCHOOL OF STUDY INFORMATION------------");
+    printf("\n\n\t CATAGORY OF SCHOOL\t:%s",catagory);
+    printf("\n\n\t CIVIL STATUS OF SCHOOL LOCATION(+2\t):%s",schoollocation);
+    printf("\n\n\t STUDIED VIII,IX,X,XI,XII IN TAMIL NADU\t:%s",tamilnadu);
+    printf("\n\n\t HAVE YOU STUDIED VIII,IX,X,XI,XII IN GOVERMENT SCHOOL?\t:%s",governmentschool);
+    printf("\n\n\t-------------ACADEMIC INFORMATION-----------");
+    printf("\n\n\t QUALIFYING EXAMINATION : HSC");
+    printf("\n\n\t PERMANENT REGISTER NUMBER\t:%d",regnum);
+    printf("\n\n\t QUALIFIED YEAR:",year);
+    printf("\n\n\t HSC GROUP\t:%s",group);
+    printf("\n\n\t SSLC MARK\t:%d",marks);
+    printf("\n\n\t HSC MARK\t:%d",sslcmark);
+    printf("\n\t\t Engineering cutoff=%f",result);
+    printf("\n\n\t YOU GOT A COLLEGE IN GENERAL COUNSELING CATEGORIES");
+break;
+}
+}
+switch(ac)
+{
+case 2:
+    printf("\n\t I WILL NOT ACCEPT ");
+    printf("\n\t [1] AM GOING FOR NEXT ROUND ");
+    printf("\n\t [2] AM QUIT THIS COUNSELING ");
+    printf("\n\tENTER YOUR CHOICE:");
+    scanf("%d",&qt);
+switch(qt)
+{
+case 1:
+    printf("\n\n\t WE WILL INFORM THE NEXT ROUND SOON \n THANK YOU ! ");
+    break;
+case 2:
+    printf("\n\n THANK YOU !");
+    break;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
